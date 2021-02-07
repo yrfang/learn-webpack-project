@@ -1,0 +1,1 @@
+(()=>{var r={548:r=>{r.exports=(r,o)=>r+o}},o={};function t(e){if(o[e])return o[e].exports;var s=o[e]={exports:{}};return r[e](s,s.exports,t),s.exports}(()=>{const r=t(548)(10,5);console.log(r)})()})();
