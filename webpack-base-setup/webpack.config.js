@@ -11,6 +11,10 @@ const config = {
       {
         use: 'babel-loader', // teach webpack to read js modules
         test: /\.js$/ //format in regular expression
+      },
+      {
+        use: ['style-loader', 'css-loader'],
+        test: /\.css$/
       }
     ]
   }
