@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack_base_setup=self.webpackChunkwebpack_base_setup||[]).push([[821],{914:(e,s,a)=>{"use strict";e.exports=a.p+"images/78ba29cd3ad76fe65841.jpeg"},821:(e,s,a)=>{"use strict";a.r(s),a.d(s,{default:()=>c});var t=a(914);const c=function(){var e=document.createElement("img");e.src=t,document.body.appendChild(e)}}}]);
