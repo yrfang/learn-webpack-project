@@ -1,3 +1,4 @@
 const sum = (a, b) => a + b;
 
-module.exports = sum;
+// Because babel-preset-env, it's able to use ES6 modules
+export default sum;
