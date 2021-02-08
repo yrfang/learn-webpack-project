@@ -1,5 +1,5 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // extracts CSS into separate files
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // extracts CSS into separate files (but not equals to scope according to JS modules)
 
 const config = {
   entry: './src/index.js',
@@ -18,6 +18,16 @@ const config = {
         // use: ['style-loader', 'css-loader'],
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
         test: /\.css$/
+      },
+      {
+        use: [
+          {
+            loader: 'url-loader',
+            options: { limit: 40000 }
+          },
+          'image-webpack-loader'
+        ],
+        test: /\.(jpe?g|png|gif|svg)$/,
       }
     ]
   },
